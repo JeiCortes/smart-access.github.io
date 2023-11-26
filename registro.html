@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -36,6 +36,7 @@
             height: auto;
             margin-top: 20px;
         }
+
         form {
             background-color: white;
             padding: 20px;
@@ -91,11 +92,9 @@
     </style>
 </head>
 <body>
-    <head>
-        <h1>Registro de usuario</h1>
-        <img src="Logo.jpg" alt="">
-        <br>
-    </head>
+    <h1>Registro de usuario</h1>
+    <img src="Logo.jpg" alt="">
+    <br>
     
     <form id="registroForm">
         <label for="nombres">Nombres:</label>
@@ -103,13 +102,12 @@
     
         <label for="apellidos">Apellidos:</label>
         <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required><br>
-        
+    
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" required><br>
     
         <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono" pattern="[0-9]+" title="Por favor, introduce solo números" required><br>
-
+        <input type="number" id="telefono" name="telefono" required><br>
     
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required><br>
@@ -118,9 +116,8 @@
     </form>
     <a href="index.html"><button>Volver</button></a>
     
-    <script src="registro.js"></script>
+    <!-- Script que manejará el registro -->
+    <script src="/js/registro.js"></script>
 </body>
-</html>
-
 </html>
 
